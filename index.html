@@ -1,65 +1,78 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="style.css" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
-    <link
-      rel="stylesheet"
-      href="path/to/font-awesome/css/font-awesome.min.css"
-    />
-    <title>Anekenonso Website</title>
-  </head>
-  <body>
-    <div class="container">
-      <h1>Hi!, Welcome to my portfolio</h1>
 
-      <!-- Slideshow container -->
-      <img class="slides" src="./img-slidder/bridge-terabithia.jpg" />
-      <img class="slides" src="./img-slidder/da-vinci-code.jpg" />
-      <img class="slides" src="./img-slidder/miliken-hill.jpg" />
-      <img class="slides" src="./img-slidder/social-contract.jpg" />
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>Anekenonso Website</title>
+</head>
 
-      <button class="left-navigator" onclick="">&#10094;</button>
-      <button class="right-navigator">&#10095;</button>
+<body>
+    <h1>Hi!, Welcome to my portfolio</h1>
 
-      <!-- Bio starts here -->
-      <div class="bio">
-        <img src="./picture.jpg" alt="" width="1000px" srcset="" />
-        <p>
-          Hello!, my name is Okenwa nonso kenneth. I'm a software Developer,
-          Entreprenuer and Undergraduate Psychology Student. I was born in the
-          turn of Akpugo, Nkanu west L.G.A Enugu state. I grow up in Zone C
-          otukpo Benue State where I did my Secondary School Education at St
-          Paul's Secondary School, and United Secondary School where I sat for
-          WASSEC/NECO. Immediately after my secondary school Education I moved
-          Back to Enugu state and Enrolled to a computer Hardware Engineering
-          school at Ogui Road, during those time at the computer Hardware school
-          I peaked interrest in Blogging then transitioned into Programming. I
-          wrote JAMB and was given Admission into Enugu State University of
-          Science and Technology where I'm currently doing a 4 years Degree
-          Program In Psychology. Clicking on the buttons bellow will take you to
-          my social media handles, Let's be Friend. I enjoy Business,
-          intellectual Discussions.
-        </p>
-        <a href="#" class="fa fa-twitter"> </a>
-        <a href="#" class="fa fa-linkedin"></a>
-        <a href="#" class="fa fa-github"></a>
+  <!-- slideshow -->
 
-      </div>
+  <div class="slideshow-container">
+
+    <div class="slides fade">
+      <img src="/img-slidder/esut.jpg" style="width:100%">
+      <div class="text">Esut Front Gate <br> This is the main Entrance gate to Enugu state University of science and Technology</div>
+    </div>
+    
+    <div class="slides fade">
+      <img src="/img-slidder/ict.jpg" style="width:100%">
+      <div class="text">Esut ICT Hub <br> This Building is occupied my AFriHub ICT, it's used to write CBT based exams</div>
+    </div>
+    
+    <div class="slides fade">
+      <img src="/img-slidder/part-time.png" style="width:100%">
+      <div class="text">Esut Post Graduate Building <br> This building is for post Graduate 
+        studies administration, SUG office is also located in this building</div>
+    </div>
+    
+    <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+    <a class="next" onclick="plusSlides(1)">&#10095;</a>
+    
     </div>
 
-    <footer class="footer">
-      Copyright &copy; 2021 Okenwa kenneth
-    </footer>
+  <!-- slideshow ends -->
 
-    <script src="./index.js"></script>
-  </body>
-  <footer></footer>
+  <!-- Bio starts here -->
+  <div class="bio">
+    <img src="./picture.jpg" alt="" class="bio-img" srcset="" />
+    <div class="bio-info">
+    <p>
+      Hello!, my name is Okenwa nonso kenneth. I'm a software Developer,
+      Entreprenuer and Undergraduate Psychology Student. I was born in the
+      turn of Akpugo, Nkanu west L.G.A Enugu state. I grow up in Zone C
+      otukpo Benue State where I did my Secondary School Education at St
+      Paul's Secondary School, and United Secondary School where I sat for
+      WASSEC/NECO. Immediately after my secondary school Education I moved
+      Back to Enugu state and Enrolled to a computer Hardware Engineering
+      school at Ogui Road, during those time at the computer Hardware school
+      I peaked interrest in Blogging then transitioned into Programming. I
+      wrote JAMB and was given Admission into Enugu State University of
+      Science and Technology where I'm currently doing a 4 years Degree
+      Program In Psychology. Clicking on the buttons bellow will take you to
+      my social media handles, Let's be Friend. I enjoy Business,
+      intellectual Discussions.
+    </p>
+    <!-- <a href="http://twitter.com/anekenonso1"><i class="fab fa-twitter" style="width: 1000px;"></i></a> -->
+    </div>
+
+  </div>
+
+  <footer class="footer">
+    Copyright &copy; 2021 Okenwa kenneth
+  </footer>
+
+  <script src="./index.js"></script>
+</body>
+<footer></footer>
+
 </html>
